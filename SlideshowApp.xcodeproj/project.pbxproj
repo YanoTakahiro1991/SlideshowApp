@@ -13,6 +13,10 @@
 		DD70A57226E0957000EB8241 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD70A57026E0957000EB8241 /* Main.storyboard */; };
 		DD70A57426E0957000EB8241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD70A57326E0957000EB8241 /* Assets.xcassets */; };
 		DD70A57726E0957000EB8241 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD70A57526E0957000EB8241 /* LaunchScreen.storyboard */; };
+		DD71003B26E3A12400205863 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD71003A26E3A12400205863 /* ResultViewController.swift */; };
+		DD761C6D26E76EF7000513CB /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD761C6C26E76EF6000513CB /* image1.jpg */; };
+		DD761C6F26E76EFD000513CB /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD761C6E26E76EFD000513CB /* image2.jpg */; };
+		DD761C7126E76F04000513CB /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD761C7026E76F04000513CB /* image3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		DD70A57326E0957000EB8241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD70A57626E0957000EB8241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD70A57826E0957000EB8241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD71003A26E3A12400205863 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		DD761C6C26E76EF6000513CB /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		DD761C6E26E76EFD000513CB /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		DD761C7026E76F04000513CB /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,9 @@
 		DD70A55E26E0957000EB8241 = {
 			isa = PBXGroup;
 			children = (
+				DD761C7026E76F04000513CB /* image3.jpg */,
+				DD761C6E26E76EFD000513CB /* image2.jpg */,
+				DD761C6C26E76EF6000513CB /* image1.jpg */,
 				DD70A56926E0957000EB8241 /* SlideshowApp */,
 				DD70A56826E0957000EB8241 /* Products */,
 			);
@@ -59,6 +70,7 @@
 				DD70A56A26E0957000EB8241 /* AppDelegate.swift */,
 				DD70A56C26E0957000EB8241 /* SceneDelegate.swift */,
 				DD70A56E26E0957000EB8241 /* ViewController.swift */,
+				DD71003A26E3A12400205863 /* ResultViewController.swift */,
 				DD70A57026E0957000EB8241 /* Main.storyboard */,
 				DD70A57326E0957000EB8241 /* Assets.xcassets */,
 				DD70A57526E0957000EB8241 /* LaunchScreen.storyboard */,
@@ -125,6 +137,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD70A57726E0957000EB8241 /* LaunchScreen.storyboard in Resources */,
+				DD761C6F26E76EFD000513CB /* image2.jpg in Resources */,
+				DD761C6D26E76EF7000513CB /* image1.jpg in Resources */,
+				DD761C7126E76F04000513CB /* image3.jpg in Resources */,
 				DD70A57426E0957000EB8241 /* Assets.xcassets in Resources */,
 				DD70A57226E0957000EB8241 /* Main.storyboard in Resources */,
 			);
@@ -140,6 +155,7 @@
 				DD70A56F26E0957000EB8241 /* ViewController.swift in Sources */,
 				DD70A56B26E0957000EB8241 /* AppDelegate.swift in Sources */,
 				DD70A56D26E0957000EB8241 /* SceneDelegate.swift in Sources */,
+				DD71003B26E3A12400205863 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
