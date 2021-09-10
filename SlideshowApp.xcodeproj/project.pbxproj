@@ -48,9 +48,9 @@
 		DD70A55E26E0957000EB8241 = {
 			isa = PBXGroup;
 			children = (
-				DD761C7026E76F04000513CB /* image3.jpg */,
-				DD761C6E26E76EFD000513CB /* image2.jpg */,
 				DD761C6C26E76EF6000513CB /* image1.jpg */,
+				DD761C6E26E76EFD000513CB /* image2.jpg */,
+				DD761C7026E76F04000513CB /* image3.jpg */,
 				DD70A56926E0957000EB8241 /* SlideshowApp */,
 				DD70A56826E0957000EB8241 /* Products */,
 			);

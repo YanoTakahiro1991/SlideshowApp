@@ -34,131 +34,142 @@ class ViewController: UIViewController {
         
         index += 1
         
+        if (index > 2){
+            
+        }
         if index >= images.count {
             index = 0
         }
         imageview.image = images[index]
     }
-    
     
     @IBAction func back(_ sender: Any) {
-        index += 1
         
-        if index >= images.count {
-            index = 0
-        }
-        imageview.image = images[index]
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    
-    func updateTimer() {
-    }
-    
-    @objc func updateTimer(_ timer: Timer) {
-        index += 1
-        
-        if index >= images.count {
-            index = 0
-        }
-        imageview.image = images[index]
-        
-    }
-    
-    @IBAction func startTimer(_ sender: Any) {
-        
-        if (timer == nil) {
-            self.timer =  Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
-            stop1.isEnabled = false
-            stop2.isEnabled = false
-            
-            startstop.setTitle("停止", for: .normal)
-        } else {
-            self.timer.invalidate()
-            self.timer = nil
-            
-            stop1.isEnabled = true
-            stop2.isEnabled = true
-            startstop.setTitle("再生", for: .normal)
-            
-            
-            
-        }
+        index += -1
         
         
+        
+        if index < 0{
+        index = 2
         
         
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let resultViewController :ResultViewController = segue.destination as! ResultViewController
-        
-        resultViewController.x = imageview.image!
-        
-        if self.timer != nil {
-            self.timer.invalidate()
-            
-            self.timer.invalidate()
-            self.timer = nil
-            stop1.isEnabled = true
-            stop2.isEnabled = true
-            startstop.setTitle("再生", for: .normal)
-        }
+    print(index)
+    
+    imageview.image = images[index]
+    
+}
+ 
+
+
+
+func updateTimer() {
+}
+
+@objc func updateTimer(_ timer: Timer) {
+    index += 1
+    
+    if index >= images.count {
+        index = 0
     }
-    @IBAction func unwind(_ sender: Any) {
+    imageview.image = images[index]
+    
+}
+
+@IBAction func startTimer(_ sender: Any) {
+    
+    if (timer == nil) {
+        self.timer =  Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
+        stop1.isEnabled = false
+        stop2.isEnabled = false
+        
+        startstop.setTitle("停止", for: .normal)
+    } else {
+        self.timer.invalidate()
+        self.timer = nil
+        
+        stop1.isEnabled = true
+        stop2.isEnabled = true
+        startstop.setTitle("再生", for: .normal)
+        
+        
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
     
 }
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    let resultViewController :ResultViewController = segue.destination as! ResultViewController
+    
+    resultViewController.x = imageview.image!
+    
+    if self.timer != nil {
+        self.timer.invalidate()
+        
+        self.timer = nil
+        stop1.isEnabled = true
+        stop2.isEnabled = true
+        startstop.setTitle("再生", for: .normal)
+    }
+}
+@IBAction func unwind(_ sender: Any) {
+    
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

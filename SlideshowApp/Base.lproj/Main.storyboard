@@ -100,10 +100,10 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cb3-59-stl">
-                                <rect key="frame" x="199" y="86" width="31" height="30"/>
+                                <rect key="frame" x="198.66666666666666" y="86" width="31" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="31" id="Bme-c4-vur"/>
-                                    <constraint firstAttribute="height" constant="30" id="fyW-h2-EqT"/>
+                                    <constraint firstAttribute="height" constant="30" id="7Ef-Eh-AgV"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="31" id="8wX-Ly-iyF"/>
                                 </constraints>
                                 <state key="normal" title="戻る"/>
                                 <connections>
@@ -115,9 +115,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="X2l-Or-rpZ" firstAttribute="centerY" secondItem="tqK-5j-459" secondAttribute="centerY" id="Hpu-sy-SNV"/>
-                            <constraint firstItem="Cb3-59-stl" firstAttribute="leading" secondItem="gPu-aX-jMh" secondAttribute="leading" constant="199" id="V77-bO-xXi"/>
-                            <constraint firstItem="Cb3-59-stl" firstAttribute="top" secondItem="gPu-aX-jMh" secondAttribute="top" constant="86" id="Ybs-cg-XuL"/>
-                            <constraint firstItem="gPu-aX-jMh" firstAttribute="trailing" secondItem="Cb3-59-stl" secondAttribute="trailing" constant="198" id="kNe-xL-7k3"/>
+                            <constraint firstItem="Cb3-59-stl" firstAttribute="top" secondItem="gPu-aX-jMh" secondAttribute="top" constant="86" id="NzM-I4-DQc"/>
+                            <constraint firstItem="Cb3-59-stl" firstAttribute="centerX" secondItem="X2l-Or-rpZ" secondAttribute="centerX" id="mjC-w2-P5t"/>
                             <constraint firstItem="X2l-Or-rpZ" firstAttribute="centerX" secondItem="tqK-5j-459" secondAttribute="centerX" id="zSQ-vS-agL"/>
                         </constraints>
                     </view>
